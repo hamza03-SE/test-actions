@@ -1,0 +1,14 @@
+name: Premier test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  afficher-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Affichage message simple
+        run: echo "✅ Le code a été bien pushé !"
